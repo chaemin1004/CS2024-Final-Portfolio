@@ -1,0 +1,188 @@
+@import "styles.css";
+
+.headerDark {
+    color: #26577C;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    font-size: 3.5vw;
+    font-family: Georgia;
+    font-weight: 400;
+}
+
+.subheaderDark {
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+}
+
+.subheaderPDPADark {
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+}
+
+#general-left {
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 600;
+    border-radius: 30px 0 0 30px;
+    padding: 10px 30px 10px 30px;
+    background-color: white; 
+    color: #26577C; 
+    border: white;
+    text-decoration: none;
+}
+
+#general-left:hover, #shipping-right:hover{
+    background-color: #E55604;
+    color: white;
+}
+
+#shipping-right {
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 600;
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px 20px 10px 21px;
+    background-color: #26577C; 
+    color: white; 
+    border: #26577C;
+    text-decoration: none;
+}
+
+.faq-buttons {
+    position: sticky; 
+    top: 15%; 
+    z-index: 4;
+}
+
+.faqBtn-shadow {
+    box-shadow: 0px 4px 5px 0 #8f99a0;
+    border-radius:25px;
+}
+
+.faqHeader {
+    color: #26577C;
+    line-height: 120%;
+    letter-spacing: 0.3px;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.accordion-button.collapsed, .accordion-button:focus, .accordion-button:not(.collapsed) {
+    font-size: 20px;
+    font-family: Georgia;
+    font-weight: 600;
+    background-color: #FAF4E6 !important;
+    border-bottom: 1px solid #26577C !important;
+    color: #26577C !important;
+}
+
+.accordion-body {
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 400;
+    background-color: #FAF4E6 !important;
+    color: #26577C !important;
+}
+
+.aboutSection p{
+    font-size: 1.2vw;
+    color: #26577C;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.aboutSection i{
+    font-size: 3.5vw;
+    color: #26577C;
+}
+
+#contactForm {
+    font-size: 1.2vw;
+    font-family: Poppins;
+}
+
+#contactForm input, textarea{
+    width: 100%;
+    line-height: 30%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #8f99a0;
+}
+
+#contactForm input::placeholder {
+    font-size: 1vw;
+}
+
+#contactForm input[type=submit] {
+    background-color: #E55604;
+    color: #fff;
+    border: none;
+    width: 40%;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+
+/* Mobile size! */
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */ 
+    .headerDark, .headerLight {
+        font-size: 6.5vw;
+    }
+
+    .subheaderLight, .subheaderDark {
+        font-size: 3.5vw;
+    }
+
+    .aboutSection p{
+        font-size: 3vw;
+        line-height: 150%;
+    }
+    
+    .aboutSection i{
+        font-size: 8vw;
+    }
+
+    #contactForm {
+        font-size: 3vw;
+    }
+    
+    #contactForm input::placeholder, textarea::placeholder{
+        font-size: 2.5vw;
+    }
+    
+    #contactForm input[type=submit] {
+        width: 55%;
+        padding: 22px 10px;
+    }
+
+    #general-left, #shipping-right {
+        font-size: 2.5vw;
+    }
+
+    .faqHeader {
+        font-size: 4vw;
+    }
+
+    .accordion-button.collapsed, .accordion-button:focus, .accordion-button:not(.collapsed), .accordion-body {
+        font-size: 3vw;
+    }
+
+    .subheaderPDPADark {
+        font-size: 3.5vw;
+    }
+
+    .headerDark, .accordion-button.collapsed, .accordion-button:focus, .accordion-button:not(.collapsed) {
+        font-family: Tinos;
+    }
+}

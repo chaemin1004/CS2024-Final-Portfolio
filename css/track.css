@@ -1,0 +1,109 @@
+@import "styles.css";
+
+.track {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 50px 50px;
+}
+
+#name {
+	color: #26577C;
+	font-family: Georgia;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 42px */
+	letter-spacing: 0.35px;
+	text-align: center;
+}
+
+#info {
+	color: #26577C;
+	text-align: justify;
+	font-family: Poppins;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 18px */
+	letter-spacing: 0.15px;
+}
+
+.id-input {
+	border-radius: 15px;
+	border: 1px solid #6C6C6B;
+	background: #FFF;
+	box-shadow: 0px 4.81481px 7.22222px 0px rgba(0, 0, 0, 0.25);
+
+	display: flex;
+	height: 55px;
+	align-items: center;
+
+	margin: 50px 0px;
+}
+
+#inputId {
+	border: none;
+	background: none;
+}
+
+#inputId::placeholder {
+	padding-left: 20px;
+	background: ;
+	color: #99A4AC !important;
+	font-family: Poppins, FontAwesome;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.track-order {
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 2vw;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+}
+
+#track-order {
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 1.2vw;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+	text-decoration-line: none;
+}
+
+.searchBtn {
+	background: #26577C !important;
+	justify-content: center;
+	border: none !important;
+
+	border-radius: 14px;
+
+	display: flex;
+	align-items: center;
+	margin: 0px !important;
+}
+
+#faq-shipping {
+	color: #26577C;
+	font-family: Poppins;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 18px */
+	letter-spacing: 0.15px;
+}
+
+@media (max-width:500px) {
+	
+	#name {
+		font-family: Tinos;
+	}
+}
