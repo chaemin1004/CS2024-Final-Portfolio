@@ -1,0 +1,274 @@
+
+.lightBG {
+    background-color: #FAF4E6;
+}
+
+.darkBG {
+    background-color: #26577C;
+}
+
+.orangeBG {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    background-color: #E55604;
+}
+
+.navNewsletterText {
+    font-family: Poppins;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0%;
+}
+
+.navText a{
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.navText a:hover, .navIcon:hover {
+    color: #E55604;
+}
+
+/* Display links for dropdown on hover */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	/* .navbar .nav-item:hover .nav-link{   } */
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-nav > li{
+    margin-left:10px;
+  }
+
+.navIcon {
+    font-size: 2vw;
+    color: #26577C;
+}
+
+footer {
+    z-index: 50 !important;
+    position: relative;
+}
+
+.footerLogo {
+    /* height: 45%; */
+    width: 20%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.footerNewsletter {
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 1.2vw;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 5%;
+}
+
+.input-shadow {
+    /* -moz-box-shadow:    3px 3px 2px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 2px 6px #ccc; */
+    box-shadow:         0px 4px 5px 0 #8f99a0;
+    border-radius:25px;
+}
+
+.input-group-text {
+    cursor: pointer;
+}
+
+#rounded-left {
+    border-radius: 30px 0px 0px 30px;
+    padding: 10px 0 10px 30px;
+    font-size: 12px;
+    font-family: Poppins, FontAwesome;
+    color: #99A4AC;
+    border: white;
+}
+
+#rounded-right {
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px 30px 10px 30px;
+}
+
+.footerLinks p {
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 1.4vw;
+}
+
+.footerLinks ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    line-height: 250%;
+}
+
+.footerLinks li {
+    padding-top: 1px;
+}
+
+.footerLinks a {
+    text-decoration:none;
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 1.1vw;
+}
+
+.footerLinks a:hover {
+    color: #E55604;
+}
+
+.footerLine {
+    background-color: #26577C;
+    height: 3px;
+}
+
+.footerCopywrite {
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 1.1vw;
+}
+
+.socialsIcon i {
+    color: #26577C;
+    font-size: 1.4vw;
+    padding-right: 20px;
+}
+
+.socialsIcon i:hover {
+    color: #E55604;
+    cursor: pointer;
+}
+
+/* Search bar */
+.search-hover {
+    border: 1px solid #ccc;
+    outline: none;
+    background-size: 15px;
+    /* background-position: 13px; */
+    border-radius: 30px;
+    width: 7.5vw;
+    height: 2vw;
+    padding: 15% 16%;
+    transition: all 0.5s;
+}
+
+.search-hover::placeholder {
+    font-family: Poppins, FontAwesome;
+    font-size: 1vw;
+}
+
+.search-hover:hover, .search-hover:focus {
+    width: 15vw;
+    height: 1vw;
+    padding: 10% 16%;
+    /* padding-left: 30px; */
+}
+
+.subscribeBtn {
+    background-color: #26577C !important; 
+    color: white !important; 
+    border: #26577C !important;
+    font-size: 1.1vw !important;
+    font-family: Poppins !important;
+}
+
+.subscribeInput::placeholder {
+    font-size: 1.1vw !important;
+    font-family: Poppins !important;
+}
+
+/* Mobile size! */
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+
+    .footerLogo {
+        width: 20%;
+    }
+
+    .footerNewsletter {
+        font-size: 2.7vw;
+    }
+
+    .subscribeBtn {
+        font-size: 2vw !important;
+    }
+
+    .subscribeInput::placeholder {
+        font-size: 2vw !important;
+    }
+
+    .footerLinks p {
+        font-size: 2.5vw;
+        margin-bottom: 5px;
+    }
+
+    .footerLinks a {
+        font-size: 2.5vw;
+    }
+
+    .footerLinks ul{
+        line-height: 5vw;
+    }
+
+    .footerCopywrite {
+        font-size: 2vw;
+        padding-top: 3%;
+    }
+
+    .footerEnd i {
+        color: #26577C;
+        font-size: 3vw;
+        letter-spacing: 1vw;
+    }
+
+    .navText a {
+        font-size: 2.5vw;
+    }
+
+    .search-hover {
+        width: 18%;
+        height: 5px;
+        padding: 3% 3%;
+    }
+
+    .search-hover:hover {
+        width: 40%;
+        height: 5px;
+        padding: 3% 5%;
+    }
+
+    .search-hover::placeholder {
+        font-size: 2vw;
+        padding: 3px 5px;
+    }
+
+    .navIcon {
+        font-size: 25px;
+    }
+
+    .navNewsletterText {
+        font-size: 2.5vw;
+        letter-spacing: 1px;
+    }
+}

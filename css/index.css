@@ -1,0 +1,435 @@
+@import "styles.css";
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden; /* Hide vertical scrollbar */
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fff;
+    padding: 0 9px;
+    margin: 0%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    color: #26577C; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 35px; /* Increase font size */
+}
+  
+#myBtn:hover {
+    color: #E55604; /* Add a dark-grey background on hover */
+}
+
+.indexBanner {
+    height: 85vh;
+    background-image: url('../images/home/web/webbanner1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 30% 80%;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* (img-height / img-width * container-width) */
+}
+
+.checkText {
+    color: #26577C;
+    font-size: 1.25vw;
+    font-family: Poppins;
+    font-weight: 600;
+    padding: 2% 0;
+    letter-spacing: 0.18px;
+}
+
+.headerDark {
+    color: #26577C;
+    font-size: 3.125vw;
+    font-family: Georgia;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.headerLight {
+    color: #fff;
+    font-size: 3.125vw;
+    font-family: Georgia;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Carousel */
+#slider {
+    position: relative;
+    width: 40%;
+    height: 40vh;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+}
+  
+#slider input[type=radio] {
+    position: relative;
+    top: 53vh;
+    width: 18px;
+    height: 18px;
+    margin: 0 15px 0 0;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+
+#slider input[type=radio]:nth-child(3) {
+    margin-right: 0px;
+}
+
+#slider input[type=radio]:checked {
+    accent-color: #26577C;
+    opacity: 1;
+}
+
+#slider input[type=radio]:hover {
+    accent-color: #E55604;
+    box-shadow: 0 0 0px 1px #E55604;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#slider label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    /* top: 15%; */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+}
+
+/* Slider Functionality */
+/* Active Slide */
+#s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3 {  
+    transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide1 {
+    transform: translate3d(110%, -100px, -1000px);
+    opacity: 0.6;
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide3, #s2:checked ~ #slide1, #s3:checked ~ #slide2 {
+    transform: translate3d(-110%, -100px, -1000px);
+    opacity: 0.6;
+}
+
+.shopNowPadding {
+    padding-top: 20vh;
+}
+
+.shopNowBtn {
+    color: #E55604;
+    border: 2px solid #E55604;
+    border-radius: 15px;
+    padding: 1vw 5vw;
+    background-color: #F4F4E6;
+    font-family: Poppins;
+    font-size: 1.6vw;
+}
+
+.shopNowBtn:hover {
+    color: #fff;
+    background-color: #E55604;
+    border: 2px solid #E55604;
+    /* padding: 1vw 5vw; */
+}
+
+.index2Banner {
+    background-image: url('../images/home/web/7.png');
+    background-repeat: no-repeat;
+    background-position: 30% 60%;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* (img-height / img-width * container-width) */
+}
+
+.warrantyText {
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 1.25vw;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 2.7px;
+}
+
+.whySubtext {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.1vw;
+    font-weight: 400;
+    padding-top: 5%;
+}
+
+.index3Banner {
+    background-image: url('../images/home/web/5.png');
+    background-repeat: no-repeat;
+    background-position: 30% 60%;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* (img-height / img-width * container-width) */
+}
+
+.reviewSubtext {
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 1.7vw;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+}
+
+.cardBG {
+    background-color: #FDFBF5 !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardTextStyle i {
+    color: #26577C;
+    font-size: 1.4vw;
+    letter-spacing: 4px;
+}
+
+.cardTextStyle p{
+    color: #26577C;
+    font-family: Poppins;
+    font-size: 0.85vw;
+    line-height: 150%;
+    padding-top: 5%;
+    margin: 0%;
+}
+
+.cardTextStyle h5 {
+    color: #26577C;
+    font-family: Georgia;
+    font-size: 1.6vw;
+}
+
+.index4Banner {
+    background-image: url('../images/home/web/6.png');
+    background-repeat: no-repeat;
+    background-position: 0% 60%;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* (img-height / img-width * container-width) */
+}
+
+/* 
+.tableBG{
+    background: #26577C !important;
+} */
+
+.specificationTable th{
+    color: #26577C !important;
+    font-family: Poppins;
+    font-size: 1.2vw;
+}
+
+.specificationTable i{
+    color: #26577C !important;
+    font-size: 1.7vw;
+}
+
+.specificationTable tr{
+    height: 70px;
+}
+
+.specificationTable tr td, .specificationTable tr th{
+    background-color: #F4F4E6 !important;
+}
+
+
+
+  
+/* Modal Content/Box */
+.modal-content {
+    background-image: linear-gradient(rgba(250, 244, 230, 0.8), rgba(250, 244, 230, 0.8)), url('../images/pdt/newsletterBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #888;
+}
+
+.close {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.modal-body {
+    font-family: Poppins;
+    color: #26577C;
+}
+
+.modal-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modal-highlight {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.newsletterForm input[type=email] {
+    width: 90%;
+    padding: 7px 15px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    box-shadow: 0 3px 5px #888;
+}
+
+.newsletterForm input[type=email]::placeholder {
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.discountBtn {
+    background-color: #E55604;
+    color: white;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: 2px solid #E55604;
+    border-radius: 15px;
+}
+
+.nothanks {
+    color: #26577C;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+
+
+
+/* Mobile size! */
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .indexBanner {
+        background-image: url('../images/home/mobile/webbanner1.jpg');
+        background-position: 50% 70%;
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: 97.29%; /* (img-height / img-width * container-width) */
+    }
+
+    .checkText {
+        font-size: 1.9vw;
+    }
+
+    .headerDark {
+        font-size: 6.5vw;
+    }
+
+    .headerLight {
+        font-size: 6.5vw;
+    }
+
+    .shopNowBtn {
+        font-size: 2.2vw;
+    }
+
+    .index2Banner {
+        background-image: url('../images/home/mobile/webbanner2.jpg');
+        background-position: 50% 60%;
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: 92.39%; /* (img-height / img-width * container-width) */
+    }
+
+    .warrantyText {
+        font-size: 2vw;
+        padding: 2% 0;
+        letter-spacing: 1.2px;
+    }
+
+    .whySubtext {
+        font-size: 3.5vw;
+    }
+
+    .index3Banner {
+        background-image: url('../images/home/mobile/webbanner3.jpg');
+        background-position: 40% 60%;
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: 83.30%; /* (img-height / img-width * container-width) */
+    }
+
+    .reviewSubtext {
+        font-size: 3.5vw;
+    }
+
+    .cardTextStyle i {
+        font-size: 2.5vw;
+    }
+    
+    .cardTextStyle p{
+        font-size: 1.7vw;
+    }
+    
+    .cardTextStyle h5 {
+        font-size: 4vw;
+        padding-top: 2%;
+    }
+
+    .index4Banner {
+        background-image: url('../images/home/mobile/webbanner4.jpg');
+        background-position: 50% 60%;
+        background-size: contain;
+        width: 100%;
+        height: 0;
+        padding-top: 93.6%; /* (img-height / img-width * container-width) */
+    }
+
+    .specificationTable th{
+        font-size: 2.5vw;
+    }
+    
+    .specificationTable i{
+        color: #26577C !important;
+        font-size: 3vw;
+    }
+
+    #slider input[type=radio] {
+        top: 38vh;
+    }
+
+    .shopNowPadding {
+        padding-top: 3vh;
+    }
+    
+    .headerDark, .headerLight, .cardTextStyle h5 {
+        font-family: Tinos;
+    }
+
+}
